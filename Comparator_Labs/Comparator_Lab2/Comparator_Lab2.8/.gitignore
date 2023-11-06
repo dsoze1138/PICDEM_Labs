@@ -1,0 +1,20 @@
+# Microchip MPLAB8
+# =========================
+*.cof
+*.hxl
+*.map
+*.mcs
+*.obj
+*.rlf
+*.sdb
+*.sym
+*.p1 
+*.pre
+*.lst
+*.hex
+*.err
+*.o
+*.d
+*.cmf
+*.dep
+startup.as
