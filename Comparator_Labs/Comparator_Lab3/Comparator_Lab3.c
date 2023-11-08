@@ -83,7 +83,7 @@ void interrupt TMR0_ISR(void)
 		//Assign the upper 4-bits of the 16-bit
 		//result to PORTC to light the LEDs connected
 		//RC0,R1,RC2 and RC3
-		PORTC = TMR1H>>4;
+		PORTC = (uint8_t)(TMR1H>>4);
 		TMR0 = 10;
 		//Clear the Timer1 register pair
 		TMR1L = 0;

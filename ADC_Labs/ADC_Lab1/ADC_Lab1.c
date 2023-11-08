@@ -180,7 +180,7 @@ void Decide(void)
 {
 	//Assign the upper 4 bits of ADRESH to the lower 4 bits
 	//of LED_Output
-	LED_Output = ADRESH >> 4; 	//Shifts the bits in ADRESL 4 bits
+	LED_Output = (uint8_t)(ADRESH >> 4); 	//Shifts the bits in ADRESL 4 bits
 								//to the right
 }
 

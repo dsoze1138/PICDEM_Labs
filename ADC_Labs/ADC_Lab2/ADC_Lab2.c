@@ -196,7 +196,7 @@ void Decide(void)
 	//Shift the ADRESH result to the left
 	//by three bit positions and assign to
 	//TMR0_preload
-	TMR0_preload = ADRESH<<3;
+	TMR0_preload = (uint8_t)(ADRESH<<3);
 	//XOR the toggle value with 1
 	toggle ^= 1;
 }
@@ -228,7 +228,7 @@ void Timing(void)
 	
 	//Subtract the TMR0_preload value from 255 and
 	//then use to preload TMR0
-	TMR0 = 255 - TMR0_preload;
+	TMR0 = (uint8_t)(255 - TMR0_preload);
 	
 	//Sit here and wait for TMR0 to overflow
 	while(T0IF == 0);
